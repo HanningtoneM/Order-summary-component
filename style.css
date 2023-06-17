@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+   --Pale-blue: hsl(225, 100%, 95%);
+   --Bright-blue: hsl(245, 75%, 52%);
+   --Very-pale-blue: hsl(225, 100%, 98%);
+   --Desaturated-blue: hsl(224, 23%, 55%);
+   --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.container {
+    width: 320px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-pale-blue);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 25ch;
+    line-height: 1.5rem;
+}
+
+.plan {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 40% 20%;
+    gap: 0.5rem;
+    place-content: center;
+}
+
+.plan img {
+    
+}
+
+.Annual {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+.Annual h2 {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    
+}
+
+.Annual p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    width: fit-content;
+}
+
+.plan a {
+    margin-top: 0.9rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--Bright-blue);
+}
+
+.plan a:hover {
+    text-decoration: underline;
+}
+
+.proceed {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.proceedOne {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    margin-bottom: 1.5rem;
+}
+
+.proceedOne:hover, .proceedOne:focus {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    outline: none;
+    transition: all .4s ease-in-out;
+}
+
+.proceedtwo {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1rem;
+    transition: 900ms ease-in-out;
+}
+
+.proceedtwo:hover, .proceedtwo:focus {
+    color: rgba(126, 52, 161, 0.75);
+    transition: 900ms ease-in-out;
+    outline: none;   
+}
+
+@media screen and (max-width: 630px) {
+    body {
+        background-image : url(images/pattern-background-mobile.svg);
+    }
+}
