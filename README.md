@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://hanningtonem.github.io/News-letter-/)
+[Live Demo Link](https://hanningtonem.github.io/Order-summary-component/)
 
 
 ## Built With
