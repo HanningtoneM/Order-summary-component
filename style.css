@@ -71,10 +71,6 @@ body {
     place-content: center;
 }
 
-.plan img {
-    
-}
-
 .Annual {
     display: flex;
     flex-direction: column;
